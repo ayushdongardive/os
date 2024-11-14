@@ -26,7 +26,7 @@ void *produce(void *args)
         sem_wait(&empty);
         pthread_mutex_lock(&mutex);
         printf("\nProducer %d is Entered in Critical Region : ",id);
-        printf int newProduct = count + 1;
+        printf newProduct = count + 1;
         buffer[count] = newProduct;
         printf("\nProducer %d produce new product %d", id, newProduct);
         count = count + 1;
